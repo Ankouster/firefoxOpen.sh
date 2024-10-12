@@ -18,9 +18,7 @@ tput civis # oculta el cursor
 
 # Advertencias
 echo -e "\n"${yellowColour}[!]${endColour}${grayColour} Recuerda actualizar el OS que estés usando${endColour}
-
 sleep 2
-
 echo -e "\n"${yellowColour}[!]${endColour}${grayColour} Recuerda instalar figlet con "sudo apt install figlet" para que todo funcione a la perfección${endColour}"\n\n\n"
 
 # CTRL+C (para cancelar la acción)
