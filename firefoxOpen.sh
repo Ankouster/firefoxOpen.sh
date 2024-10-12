@@ -16,11 +16,6 @@ grayColour="\e[0;37m\033[1m"
 
 tput civis # oculta el cursor
 
-# Advertencias
-echo -e "\n"${yellowColour}[!]${endColour}${grayColour} Recuerda actualizar el OS que estés usando${endColour}
-sleep 2
-echo -e "\n"${yellowColour}[!]${endColour}${grayColour} Recuerda instalar figlet con "sudo apt install figlet" para que todo funcione a la perfección${endColour}"\n\n\n"
-
 # CTRL+C (para cancelar la acción)
 ctrl_c(){
   echo -e "\n\n"${yellowColour}[+]${endColour}${grayColour} Cancelando procesos...${endColour}
@@ -31,6 +26,11 @@ ctrl_c(){
 
 # llama a la función "ctrl_c"
 trap ctrl_c SIGINT
+
+# Advertencias
+echo -e "\n"${yellowColour}[!]${endColour}${grayColour} Recuerda actualizar el OS que estés usando${endColour}
+sleep 2
+echo -e "\n"${yellowColour}[!]${endColour}${grayColour} Recuerda instalar figlet con "sudo apt install figlet" para que todo funcione a la perfección${endColour}"\n\n\n"
 
 # Espera 5 segundos antes de ejecutar el siguiente comandos
 sleep 5
